@@ -1,0 +1,171 @@
+/* General Page Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text on dark background */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #e0e0e0;
+    margin: 20px 0 10px;
+}
+
+.text {
+    font-size: 1em;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+}
+
+/* Water Tracker Styles */
+.cup {
+    width: 50px;
+    height: 100px;
+    background-color: #37474f;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.cup-small {
+    background-color: #546e7a;
+}
+
+.cups {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0 30px;
+    flex-wrap: wrap;
+}
+
+.remained {
+    position: relative;
+    width: 150px;
+    height: 300px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #212121;
+    margin: 20px auto;
+}
+
+#liters {
+    font-size: 2em;
+    color: #ffffff;
+}
+
+#percentage {
+    font-size: 2em;
+    color: #4caf50;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+/* Tracker Container - Align Sleep Tracker and Premium Tab Side-by-Side */
+.tracker-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    align-items: flex-start;
+}
+
+/* Sleep Tracker Styles */
+.sleep-tracker {
+    padding: 15px;
+    border: 2px solid #555;
+    border-radius: 10px;
+    background-color: #333;
+    width: 250px;
+}
+
+.sleep-tracker h2 {
+    color: #ffffff;
+}
+
+.sleep-status p, #sleep-message {
+    font-size: 1.1em;
+    color: #b0b0b0;
+    margin: 5px 0;
+}
+
+#sleep-input {
+    width: 100px;
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 1em;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #212121;
+    color: #ffffff;
+}
+
+/* Go Premium Section Styles */
+.premium-section {
+    padding: 15px;
+    border: 2px solid #ff9800;
+    border-radius: 10px;
+    background-color: #333;
+    text-align: center;
+    width: 200px;
+}
+
+.premium-section h2 {
+    color: #ff9800;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Premium and Login Buttons */
+#premium-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#premium-btn:hover {
+    background-color: #e68900;
+}
+
+#login-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #1e88e5; /* Blue background for login button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-btn:hover {
+    background-color: #1565c0;
+}

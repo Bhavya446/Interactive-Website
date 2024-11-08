@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Wellness Tracker</title>
+</head>
+<body>
+    <h1>Wellness Tracker</h1>
+
+    <!-- Water Tracker Section -->
+    <h2>Water Intake Tracker</h2>
+    <p>Goal: 2 liters</p>
+    <p class="text">Select how many glasses of water you have drank</p>
+    <div class="cup">
+        <div class="remained" id="remained">
+            <span id="liters"></span>
+            <small>Remained</small>
+        </div>
+        <div class="percentage" id="percentage"></div>
+    </div>
+    <div class="cups">
+        <div class="cup cup-small">250</div>
+        <div class="cup cup-small">250</div>
+        <div class="cup cup-small">250</div>
+        <div class="cup cup-small">250</div>
+        <div class="cup cup-small">250</div>
+        <div class="cup cup-small">250</div>
+        <div class="cup cup-small">250</div>
+        <div class="cup cup-small">250</div>
+        <div class="cup cup-small">250</div>
+    </div>
+
+    <!-- Sleep Tracker and Premium Section -->
+    <div class="tracker-container">
+        <!-- Sleep Tracker Section -->
+        <div class="sleep-tracker">
+            <h2>Sleep Tracker</h2>
+            <p>Goal: 8 hours</p>
+            <label for="sleep-input">Enter hours slept:</label>
+            <input type="number" id="sleep-input" min="0" max="24" step="0.5" placeholder="e.g., 7.5" />
+            <button onclick="updateSleep()">Add Sleep</button>
+            <div class="sleep-status">
+                <p>Hours Slept: <span id="hours-slept">0</span> hrs</p>
+                <p>Remaining: <span id="remaining-sleep">8</span> hrs</p>
+            </div>
+            <p id="sleep-message"></p>
+        </div>
+
+        <!-- Premium Section with Login Button -->
+        <div class="premium-section">
+            <h2>Upgrade to Premium</h2>
+            <button id="premium-btn">Go Premium</button>
+            <button id="login-btn">Login Details</button> <!-- Login button here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

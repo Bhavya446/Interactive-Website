@@ -38,7 +38,7 @@ To set up and run this project locally, follow these steps:
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/your-username/wellness-tracker.git
+git clone https://github.com/Bhavya446/wellness-tracker.git
 Navigate to the project folder:
 bash
 Copy code
